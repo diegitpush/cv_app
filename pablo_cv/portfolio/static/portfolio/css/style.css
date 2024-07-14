@@ -632,6 +632,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-size: 30px;
   color: #000000; }
 
+.job.h1 {
+  color: #424245; }
+
 .item {
   border: none;
   margin-bottom: 30px;
