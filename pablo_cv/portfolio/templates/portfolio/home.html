@@ -6,21 +6,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Pablo Minué</title>
-  <link rel="shortcut icon" href="{% static 'portfolio/document-text.svg' %}">
+  <link rel="shortcut icon" href="{% static 'document-text.svg' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/owl.carousel.min.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/owl.theme.default.min.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/jquery.fancybox.min.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/fonts/icomoon/style.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/fonts/flaticon/font/flaticon.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/aos.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'portfolio/css/prism.css' %}"
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/prism.css' %}"
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
@@ -48,25 +48,21 @@
 
         <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
           <li><a href="#home-section" class="nav-link active">Home</a></li>
-          <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+          <li><a href="#about-section" class="nav-link">About Me</a></li>
           <li class="has-children">
-            <a href="#about-section" class="nav-link">About</a>
+            <a href="#experience-section" class="nav-link">Experience</a>
             <ul class="dropdown">
-              <li><a href="elements.html" class="nav-link">Elements</a></li>
-              <li class="has-children">
-                <a href="#">Menu Two</a>
-                <ul class="dropdown">
-                  <li><a href="#" class="nav-link">Sub Menu One</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Two</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="nav-link">Menu Three</a></li>
+              <li><a href="#revolut-exp" class="nav-link">Revolut</a></li>
+              <li><a href="#chep-exp" class="nav-link">Chep</a></li>
+              <li><a href="#prosegur-exp" class="nav-link">Prosegur</a></li>
+              <li><a href="#airbus-exp" class="nav-link">Airbus</a></li>
             </ul>
           </li>
-          <li><a href="#services-section" class="nav-link">Services</a></li>
+          <li><a href="#technologies-section" class="nav-link">Technologies</a></li>
+          <li><a href="#skills-section" class="nav-link">Skills</a></li>
+          <li><a href="#projects-section" class="nav-link">Projects</a></li>
 
-          <li><a href="#contact-section" class="nav-link">Contact us</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
         </ul>
 
         <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
@@ -98,7 +94,7 @@
           <h2 class="subheading gsap-reveal-hero mb-4">
             Data Analyst and Engineer. Curious, innovative and proactive. Responsible for the Creative Department Data at <strong>Revolut</strong>. You can also check my <a href="https://www.linkedin.com/in/pablo-minue/" target="_blank">LinkedIn Profile</a> here.
           </h2>
-          <p class="gsap-reveal-hero"><a href="{% static 'portfolio/pdf/Pablo_Minue_2024_04.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to Dowload my CV as PDF</a></p>    
+          <p class="gsap-reveal-hero"><a href="{% static 'pdf/Pablo_Minue_2024_04.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to Dowload my CV as PDF</a></p>    
         </div>
       </div>
       
@@ -113,7 +109,7 @@
       <div class="container">
         <div class="row justify-content-center mb-3">
           <div class="col-lg-7 mx-auto text-center author-wrap">
-            <img src="{% static 'portfolio/images/ID_Photo.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3">
+            <img src="{% static 'images/ID_Photo.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3">
             <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Pablo Minué</h3>
             <p class="gsap-reveal-hero">Data Analyst & Engineer</p>
           </div>
@@ -127,7 +123,7 @@
 
             <p class="gsap-reveal-hero">On my third year I got a intern scolarship to study part of my third year in <a href="https://msu.edu/" target="_blank"><span style="color:#f7f7f7" class="bolded"> Michigan State University. </span></a>. After that, I came back to Madrid to finish my studies.</p>
 
-            <p class="gsap-reveal-hero">During my Final Grade Paper I started to get into programming and Data. My project, financed by the US Navy, consisted on creating a <a href="{% static 'portfolio/pdf/TFG_Pablo_Minue.pdf' %}" target="_blank"><span style="color:#f7f7f7" class="bolded"> Mathematical Model (In Matlab) </span></a> to predict the behviour of Composite Materials against underwater explossions.</p>
+            <p class="gsap-reveal-hero">During my Final Grade Paper I started to get into programming and Data. My project, financed by the US Navy, consisted on creating a <a href="{% static 'pdf/TFG_Pablo_Minue.pdf' %}" target="_blank"><span style="color:#f7f7f7" class="bolded"> Mathematical Model (In Matlab) </span></a> to predict the behviour of Composite Materials against underwater explossions.</p>
 
             <p class="gsap-reveal-hero">I started an internship in Airbus, where I did a similar job to the one I did on my Final Grade Paper: Experiment, collect the data, filter the data and extract results</p>
 
@@ -142,7 +138,7 @@
 
 
 
-    <div class="untree_co-section pb-0" id="services-section">
+    <div class="untree_co-section pb-0" id="experience-section">
       <div class="container">
         <div class="row mb-4">
           <div class="col-lg-7 text-center mx-auto">
@@ -162,11 +158,11 @@
           <div class="row">
               <div class="col-md-2">
                   <!-- Company Icon -->
-                  <img src="{% static '/portfolio/images/revolut.png' %}" alt="Revolut" class="img-fluid">
+                  <img src="{% static '/images/revolut.png' %}" alt="Revolut" class="img-fluid">
               </div>
               <div class="col-md-10">
                   <!-- Job Position Title -->
-                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;">Data Analyst & Engineer</h1>
+                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="revolut-exp">Data Analyst & Engineer</h1>
                   <!-- Company Subtitle -->
                   <p class="job-dates-company" style="color: #84848a">
                     <span class="job-dates">August 2023 - Today</span>
@@ -182,17 +178,16 @@
                     Delivery of Data Analysis to help the Department make data driven decisions.
                     Creation of Dashboards to visualize the new data.
                   </p>
-              </div>
           </div>
           <!-- CHEP -->
           <div class="row">
             <div class="col-md-2">
                 <!-- Company Icon -->
-                <img src="{% static '/portfolio/images/svg/chep.svg' %}" alt="CHEP" class="img-fluid">
+                <img src="{% static '/images/svg/chep.svg' %}" alt="CHEP" class="img-fluid">
             </div>
             <div class="col-md-10">
                 <!-- Job Position Title -->
-                <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;">ML Data Engineer & Automation</h1>
+                <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="chep-exp">ML Data Engineer & Automation</h1>
                 <!-- Company Subtitle -->
                 <p class="job-dates-company" style="color: #84848a">
                   <span class="job-dates">January 2022 - August 2023</span>
@@ -214,11 +209,11 @@
         <div class="row">
           <div class="col-md-2">
               <!-- Company Icon -->
-              <img src="{% static '/portfolio/images/prosegur.jpg' %}" alt="PROSEGUR" class="img-fluid">
+              <img src="{% static '/images/prosegur.jpg' %}" alt="PROSEGUR" class="img-fluid">
           </div>
           <div class="col-md-10">
               <!-- Job Position Title -->
-              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;">Data Automation Developer</h1>
+              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="prosegur-exp">Data Automation Developer</h1>
               <!-- Company Subtitle -->
               <p class="job-dates-company" style="color: #84848a">
                 <span class="job-dates">January 2021 - January 2022</span>
@@ -236,11 +231,11 @@
         <div class="row">
           <div class="col-md-2">
               <!-- Company Icon -->
-              <img src="{% static '/portfolio/images/airbus.jpg' %}" alt="PROSEGUR" class="img-fluid gsap-reveal-hero">
+              <img src="{% static '/images/airbus.jpg' %}" alt="PROSEGUR" class="img-fluid gsap-reveal-hero">
           </div>
           <div class="col-md-10">
               <!-- Job Position Title -->
-              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;">Materials Engineer Trainee</h1>
+              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id = "airbus-exp">Materials Engineer Trainee</h1>
               <p class="job-dates-company" style="color: #84848a">
                 <span class="job-dates">September 2019 - January 2021</span>
             </p>
@@ -262,7 +257,7 @@
       <div class="container">
         <div class="row mb-4">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Technologies</strong></h2>
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="technologies-section"><strong>Technologies</strong></h2>
             <p class="gsap-reveal-hero">These are some of my technical skills</p>
             <div class="wave gsap-reveal-hero" >
               <svg>
@@ -277,7 +272,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/logo-python.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-python.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Python</h3>
               <p class="gsap-reveal-hero">Proficiency in Python. Total control on ETLs and Pipelines. Creation of an Open Source Package `pysqltools`</p>
@@ -286,7 +281,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/server.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/server.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">SQL</h3>
               <p class="gsap-reveal-hero">Proficient working with databases. Creating and handling databases, usage of advanced window functions, etc.</p>
@@ -296,7 +291,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/cloud-done.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/cloud-done.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Cloud</h3>
               <p class="gsap-reveal-hero">Experience working with different cloud providers (AWS, GCloud), even created my own Cloud on a NAS</p>
@@ -307,7 +302,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/logo-javascript.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-javascript.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">HTML, CSS, JS</h3>
               <p class="gsap-reveal-hero">Basic knowledge on these three languages to create a website. This website was created on Django and HTML, CSS and JS (bootstrap)</p>
@@ -317,7 +312,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/logo-tux.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-tux.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Bash/Linux</h3>
               <p class="gsap-reveal-hero">Great Experience handling linux/unix systems. All of my developments use them (I use ubuntu and MacOS). Also used in Cloud as most systems are linux-based.</p>
@@ -331,7 +326,7 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'portfolio/images/svg/logo-docker.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-docker.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Docker</h3>
               <p class="gsap-reveal-hero">Use of Docker to containerize applications, both personal apps on my own NAS or ETLs to run in Apache Airflow</p>
@@ -347,7 +342,7 @@
       <div class="container">
         <div class="row mb-4">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>My Skillset</strong></h2>
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="skills-section"><strong>My Skillset</strong></h2>
             <p class="gsap-reveal-hero">How I manage the main sections of the Data World</p>
             <div class="wave gsap-reveal-hero" >
               <svg>
@@ -398,7 +393,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Personal Projects</strong></h2>
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="projects-section"><strong>Personal Projects</strong></h2>
             <p class="gsap-reveal-hero">Projects I have developed on my free time</p>
 
             <div class="wave gsap-reveal-hero" >
@@ -417,7 +412,7 @@
           <div class="owl-carousel owl-3-slider">
             <div class="item">
               <div class="testimonial-v1">
-                <img src="{% static 'portfolio/images/pysqltools.png' %}" alt="Image" class="img-fluid">
+                <img src="{% static 'images/pysqltools.png' %}" alt="Image" class="img-fluid">
                 <div class="mb-4">
                   <h3>pySQLTools</h3>
                   <span class="caption">Open Soruce Python Package</span>
@@ -432,7 +427,7 @@
 
             <div class="item">
               <div class="testimonial-v1">
-                <img src="{% static 'portfolio/images/bw.png' %}" alt="Image" class="img-fluid">
+                <img src="{% static 'images/bw.png' %}" alt="Image" class="img-fluid">
                 <div class="mb-4">
                   <h3>Fantasy Football App</h3>
                   <span class="caption">Android/iOS App for Biwenger Statitics</span>
@@ -442,7 +437,7 @@
                 </blockquote>
                 <p class="gsap-reveal-hero">
                   <a href="https://github.com/pablominue/bw_app" target="_blank" class="btn btn-outline-black">Click here to check the GitHub Page</a>
-                  <!-- <span class="icon-service"><img src="{% static 'portfolio/images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
+                  <!-- <span class="icon-service"><img src="{% static 'images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
                 </p>
               </div>
             </div>
@@ -450,7 +445,7 @@
 
             <div class="item">
               <div class="testimonial-v1">
-                <img src="{% static 'portfolio/images/luckyromero.png' %}" alt="Image" class="img-fluid">
+                <img src="{% static 'images/luckyromero.png' %}" alt="Image" class="img-fluid">
                 <div class="mb-4">
                   <h3>Rock Band Website</h3>
                   <span class="caption">Lucky Romero</span>
@@ -460,7 +455,7 @@
                 </blockquote>
                 <p class="gsap-reveal-hero">
                   <a href="https://grupoluckyromero.onrender.com/" target="_blank" class="btn btn-outline-black">Click here to check it out</a>
-                  <!-- <span class="icon-service"><img src="{% static 'portfolio/images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
+                  <!-- <span class="icon-service"><img src="{% static 'images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
                 </p>
               </div>
             </div>
@@ -468,374 +463,36 @@
             <!-- END .item -->
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- GALLERY -->
-
-    <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
-        <div class="container">
-    
-    
-          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-          <div id="portfolio-single-holder"></div>
-    
-          <div class="portfolio-wrapper">
-    
-            <div id="posts" class="row">
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Obsessed Book</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_1.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Book Binding</h3>
-                      <p>illustration, application</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_2.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Fresh Fruits</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_3.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Powerful Speaker</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_4.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Wireless Headset</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_5.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Black & White Cubic</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_6.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Nike Shoe</h3>
-                      <p>illustration, application</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_7.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Old Typewriter</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_8.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Walking Man</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_9.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Progress Journal</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_10.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>The Dog</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_11.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Beautiful Woman</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_12.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                      <h3>Book Binding</h3>
-                      <p>web, branding</p>
-                    </div>
-                  </div>
-                  <img src="{% static 'portfolio/images/img_2.jpg' %}" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-    
-    
-            </div>
-          </div>
-    
-    
-            <!-- </div>
-            </div> -->
-          </div>
-        </div>
-
-
-    <div class="untree_co-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Blog Posts</strong></h2>
-            <p class="gsap-reveal-hero">News &amp; Updates</p>
-
-            <div class="wave gsap-reveal-hero" >
-              <svg>
-                <path d="M10,10 L50,100 L90,50" stroke="#0389ff" stroke-width="2"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="{% static 'portfolio/images/gal_1.jpg' %}" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="{% static 'portfolio/images/gal_2.jpg' %}" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="{% static 'portfolio/images/gal_3.jpg' %}" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="{% static 'portfolio/images/gal_4.jpg' %}" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      <!-- </div>
+    </div> -->
 
     <div class="untree_co-section" id="contact-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
             <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contact</strong></h2>
-            <p class="gsap-reveal-hero">Available for work. Get in touch</p>
+            <p class="gsap-reveal-hero">Get in touch!</p>
 
             <div class="wave gsap-reveal-hero" >
               <svg>
                 <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
               </svg>
+
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="https://github.com/pablominue" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-github"></span> GitHub </a>
+              <a href="https://www.linkedin.com/in/pablo-minue/" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-linkedin"></span> LinkedIn </a>
+              <a href="mailto:pablominue97@gmail.com" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-envelope"></span> Email </a>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <form action="#">
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" placeholder="Firstname">
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" placeholder="Lastname">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 form-group">
-                  <input type="email" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write your message..."></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 form-group">
-                  <input type="submit" class="btn btn-black" value="Send Message">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-6">
-            <div id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.12856481718734!2d-73.97263090448001!3d40.78263296621774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588ff21eaaab%3A0xd0128d5d89a30429!2sMargarita%20Anthoine!5e0!3m2!1sen!2sph!4v1597149027268!5m2!1sen!2sph"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </div>
 
-    <div class="site-footer">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Home</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">Untree.co</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-              </ul>
-            </div> <!-- /.widget -->
-          </div> <!-- /.col-lg-3 -->
-
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Projects</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">HTML5</a></li>
-                <li><a href="#">CSS3</a></li>
-                <li><a href="#">Untree.co</a></li>
-                <li><a href="#">Free Templates</a></li>
-                <li><a href="#">WordPress Themes</a></li>
-              </ul>
-            </div> <!-- /.widget -->
-          </div> <!-- /.col-lg-3 -->
-
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Services</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">Untree.co</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <li><a href="#">Freebies</a></li>
-              </ul>
-            </div> <!-- /.widget -->
-          </div> <!-- /.col-lg-3 -->
 
 
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-              <ul class="list-unstyled links mb-4">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
-              </ul>
-
-              <h3>Connect</h3>
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                <li><a href="#"><span class="icon-dribbble"></span></a></li>
-              </ul>
 
             </div> <!-- /.widget -->
           </div> <!-- /.col-lg-3 -->
@@ -855,7 +512,7 @@
 
               **==========
             -->
-            <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+            <p class="mb-0">Pablo Minué &copy;<script>document.write(new Date().getFullYear());</script>
             </p>
           </div>
         </div>
@@ -869,23 +526,24 @@
       </div>
     </div>
 
-    <script src="{% static 'portfolio/js/jquery-3.4.1.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/popper.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/jquery.animateNumber.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/jquery.fancybox.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/aos.js' %}"></script>
-    <script src="{% static 'portfolio/js/wave-animate.js' %}"></script>
-    <script src="{% static 'portfolio/js/circle-progress.js' %}"></script>
-    <script src="{% static 'portfolio/js/imagesloaded.pkgd.js' %}"></script>
-    <script src="{% static 'portfolio/js/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/jquery.easing.1.3.js' %}"></script>
-    <script src="{% static 'portfolio/js/TweenMax.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/ScrollMagic.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/scrollmagic.animation.gsap.min.js' %}"></script>
-    <script src="{% static 'portfolio/js/custom.js' %}"></script>
-    <script src="{% static 'portfolio/js/prism.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/wave-animate.js' %}"></script>
+    <script src="{% static 'js/circle-progress.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'js/scrollmagic.animation.gsap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/prism.js' %}"></script>
   </body>
   </html>
