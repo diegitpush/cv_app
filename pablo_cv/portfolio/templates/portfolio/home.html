@@ -89,11 +89,11 @@
                 loop: true
               })
             </script>
-          <h1 class="heading gsap-reveal-hero mb-3"><strong>Pablo<span class="text-primary">.</span> Minué</strong></h1>
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>Diego<span class="text-primary">.</span> López</strong></h1>
           <h2 class="subheading gsap-reveal-hero mb-4">
-            Data Engineer at <strong>Allianz Direct</strong>. Curious, innovative and proactive. Fluent in Software Development and Machine Learning. You can also check my <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank">LinkedIn Profile</a> here.
+            Data Engineer based in <strong>Madrid, Spain</strong>. Curious, self-teaching, proactive. Fluent in Software Development and Machine Learning. You can also check my <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank">LinkedIn Profile</a>.
           </h2>
-          <p class="gsap-reveal-hero"><a href="{% static 'pdf/Pablo_Minue_2024_04.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to Dowload my CV as PDF</a></p>    
+          <p class="gsap-reveal-hero"><a href="{% static 'pdf/Pablo_Minue_2024_04.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to download my CV as PDF</a></p>    
         </div>
       </div>
       
@@ -108,9 +108,9 @@
       <div class="container">
         <div class="row justify-content-center mb-3">
           <div class="col-lg-7 mx-auto text-center author-wrap">
-            <img src="{% static 'images/ID_Photo.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3">
-            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Pablo Minué</h3>
-            <p class="gsap-reveal-hero">Data Analyst & Engineer</p>
+            <img src="{% static 'images/ID_Photo.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Diego López</h3>
+            <p class="gsap-reveal-hero">Data Engineer & Software Developer</p>
           </div>
         </div>
 
@@ -153,52 +153,55 @@
     <section class="job-experience">
       <div class="container">
 
-        <!-- REVOLUT -->
+        <!-- ALLIANZ DIRECT -->
           <div class="row">
               <div class="col-md-2">
                   <!-- Company Icon -->
-                  <img src="{% static '/images/revolut.png' %}" alt="Revolut" class="img-fluid">
+                  <img src="{% static '/images/azdir_logo.png' %}" alt="Allianz Direct" class="img-fluid">
               </div>
               <div class="col-md-10">
                   <!-- Job Position Title -->
-                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="revolut-exp">Data Analyst & Engineer</h1>
+                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="azdir-exp">Data Engineer & Software Developer</h1>
                   <!-- Company Subtitle -->
                   <p class="job-dates-company" style="color: #84848a">
-                    <span class="job-dates">August 2023 - Today</span>
+                    <span class="job-dates">November 2023 - today</span>
                 </p>
                   <!-- Experience Description -->
                   <p class="experience-description">
-                    Data Engineer and Analyst for the Creative Department in Revolut, and Functional Manager of the Creative Data Team.
-                    As the data responsable for the department, my responsabilities are:
-                    Management of the Data Analysts of the department (Task management, deadlines, etc)
-                    Ceation of a Data Infrastructure and ETLs to provide new data sources for the team, including the application of ML models and Data Transformation to provide clean data.
-                    Relational Database tables for posterior analytics/visualizations.
-                    Finding and applying new KPIs to help the business grow.
-                    Delivery of Data Analysis to help the Department make data driven decisions.
-                    Creation of Dashboards to visualize the new data.
+                    Data Engineer and software developer in charge of building, maintaining and scaling a unified Data Platform as a core component of a data-centric company.
+                    This data platform is a self-service Data Lakehouse, in which different domain users can autonomously generate new data pipelines by filling templates, which are automatically deployed on Databricks, and which custom logic is developed in Scala and Python.
+                    Our goal is a Data Platform in which employees all across the company can include Data as a core component of their workflows and decision processes, making this as agile and easy for them as possible, while still following software and governance best practices for future maintability and scalability. <br><br>
+                  
+                    My responsabilities include:<br>
+                    Develop an ecosystem (custom libraries, CI/CD pipelines, IaC) in which users can automatically ingest data (Kafka, APIs, files) and transform it (Python, dbt) by just filling templates<br>
+                    Build custom pipelines for Data Analytics and Machine Learning use cases<br>
+                    Data Governance (IAM, GDPR, data quality)<br>
+                    Platform security (access controls, security by depth)<br>
+                    Cost optimization (storage and compute)<br>
+                    Platform monitoring (both internal and user-facing dashboards)<br><br>
+
+                    Tech stack: Data Platform based on Azure Databricks. Code developed in Scala, Python and SQL. GitHub used for version control and CI/CD. Terraform for IaC. For ingestion and transformation: Kafka, Spark, pandas, dbt.
+                    
                   </p>
           </div>
-          <!-- CHEP -->
+          <!-- ALTEN -->
           <div class="row">
             <div class="col-md-2">
                 <!-- Company Icon -->
-                <img src="{% static '/images/svg/chep.svg' %}" alt="CHEP" class="img-fluid">
+                <img src="{% static '/images/alten_logo_2.png' %}" alt="ALTEN" class="img-fluid">
             </div>
             <div class="col-md-10">
                 <!-- Job Position Title -->
-                <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="chep-exp">ML Data Engineer & Automation</h1>
+                <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="alten-exp">Data Engineer</h1>
                 <!-- Company Subtitle -->
                 <p class="job-dates-company" style="color: #84848a">
-                  <span class="job-dates">January 2022 - August 2023</span>
+                  <span class="job-dates">March 2022 - November 2023</span>
               </p>
                 <!-- Experience Description -->
                 <p class="experience-description">
-                  Implementation of ML/AI solutions by developing, designing, and testing a final solution.
-                  Performance of Data Analysis to support any new required implementation.
-                  Constant communication with the Business units to fit the regional business needs, and improve the service.
-                  Utilization of Python on AWS to develop the solutions, along with other tecnnologies such as SQL and Git.
-                  Also, I had experience on Automation Development with ython, VBA and Blue Prism Aautomations, SQL Data Management, Microsoft PowerApps, PowerBI and power Automate Solutions.
-                  I had Continuous communication with the business to improve the solutions and automations.
+                  Data Engineer in charge of building data pipelines to ingest, transform and load data from different business applications into a unified cloud-based data lakehouse, serving the business needs all across the process.
+                  The data lakehouse was based on Azure Databricks, and the pipelines were bulit using Scala, Python or SQL within the Spark framework.
+                  Other tools used: Azure Synapse, Azure Data Factory, Azure DevOps.
                 </p>
             </div>
         </div>
@@ -212,15 +215,14 @@
           </div>
           <div class="col-md-10">
               <!-- Job Position Title -->
-              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="prosegur-exp">Data Automation Developer</h1>
+              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="prosegur-exp">Automation Developer</h1>
               <!-- Company Subtitle -->
               <p class="job-dates-company" style="color: #84848a">
-                <span class="job-dates">January 2021 - January 2022</span>
+                <span class="job-dates">October 2019 - March 2022</span>
             </p>
               <!-- Experience Description -->
               <p class="experience-description">
-                Automation of Business Processes for different departments within the company. Usage of tools such as Python, SQL, Blue Prism, VBA, OLEDB, RegEx, APIs etc. 
-                Responsible for the training and supervision of two Automation Developer Trainees.
+                Automation of manual business processes for departments within the company, using tools such as Python, SQL and Blue Prism.
               </p>
           </div>
       </div>
@@ -504,7 +506,7 @@
 
               **==========
             -->
-            <p class="mb-0">Pablo Minué &copy;<script>document.write(new Date().getFullYear());</script>
+            <p class="mb-0">Diego López &copy;<script>document.write(new Date().getFullYear());</script>
             </p>
           </div>
         </div>
