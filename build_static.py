@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+"""
+Build script to generate static HTML for GitHub Pages deployment.
+This script renders the Django template and copies all static assets to docs/ folder.
+"""
+
+import os
+import sys
+import shutil
+import django
+from pathlib import Path
+
+# Directories
+REPO_ROOT = Path(__file__).resolve().parent
+DJANGO_DIR = REPO_ROOT / 'diego_cv'
+DOCS_DIR = REPO_ROOT / 'docs'
+STATIC_SOURCE = DJANGO_DIR / 'static'
+
+# Add Django project to path and setup
+sys.path.insert(0, str(DJANGO_DIR))
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'diego_cv.settings')
+django.setup()
+
+from django.template.loader import render_to_string
+from django.conf import settings
+
+# Clean and create docs directory
+if DOCS_DIR.exists():
+    shutil.rmtree(DOCS_DIR)
+DOCS_DIR.mkdir()
+
+print("Rendering Django template to static HTML...")
+# Render the template
+html_content = render_to_string('portfolio/home.html')
+
+# Replace Django static tags with relative paths
+html_content = html_content.replace('="/static/', '="./static/')
+html_content = html_content.replace("='/static/", "='./static/")
+
+# Write index.html
+with open(DOCS_DIR / 'index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"Created: {DOCS_DIR / 'index.html'}")
+
+# Copy static files
+print("\nCopying static files...")
+shutil.copytree(STATIC_SOURCE, DOCS_DIR / 'static')
+print(f"Copied static files to: {DOCS_DIR / 'static'}")
+
+print("\n✓ Build complete!")
+print(f"\nYour static site is ready in: {DOCS_DIR}")
+print("\nNext steps:")
+print("1. Commit the docs/ folder to your repository")
+print("2. Go to your GitHub repository Settings > Pages")
+print("3. Set Source to 'Deploy from a branch'")
+print("4. Set Branch to 'main' and folder to '/docs'")
+print("5. Save and wait for deployment")
