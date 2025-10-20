@@ -13,8 +13,8 @@ from pathlib import Path
 # Directories
 REPO_ROOT = Path(__file__).resolve().parent
 DJANGO_DIR = REPO_ROOT / 'diego_cv'
-STATIC_PAGE_SERVING_DIR = REPO_ROOT / 'static_page_serving'
-STATIC_SOURCE = DJANGO_DIR / 'static'
+DOCS_DIR = REPO_ROOT / 'docs'
+STATIC_SOURCE = DJANGO_DIR / 'staticfiles'  # Use staticfiles (with hashes), not static
 
 # Add Django project to path and setup
 sys.path.insert(0, str(DJANGO_DIR))
@@ -23,11 +23,16 @@ django.setup()
 
 from django.template.loader import render_to_string
 from django.conf import settings
+from django.core.management import call_command
+
+# Collect static files with hashes
+print("Collecting static files...")
+call_command('collectstatic', '--noinput', '--clear')
 
 # Clean and create docs directory
-if STATIC_PAGE_SERVING_DIR.exists():
-    shutil.rmtree(STATIC_PAGE_SERVING_DIR)
-STATIC_PAGE_SERVING_DIR.mkdir()
+if DOCS_DIR.exists():
+    shutil.rmtree(DOCS_DIR)
+DOCS_DIR.mkdir()
 
 print("Rendering Django template to static HTML...")
 # Render the template
@@ -38,13 +43,13 @@ html_content = html_content.replace('="/static/', '="./static/')
 html_content = html_content.replace("='/static/", "='./static/")
 
 # Write index.html
-with open(STATIC_PAGE_SERVING_DIR / 'index.html', 'w', encoding='utf-8') as f:
+with open(DOCS_DIR / 'index.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print(f"Created: {STATIC_PAGE_SERVING_DIR / 'index.html'}")
+print(f"Created: {DOCS_DIR / 'index.html'}")
 
 # Copy static files
 print("\nCopying static files...")
-shutil.copytree(STATIC_SOURCE, STATIC_PAGE_SERVING_DIR / 'static')
-print(f"Copied static files to: {STATIC_PAGE_SERVING_DIR / 'static'}")
+shutil.copytree(STATIC_SOURCE, DOCS_DIR / 'static')
+print(f"Copied static files to: {DOCS_DIR / 'static'}")
 
