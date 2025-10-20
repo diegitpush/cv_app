@@ -1,2 +1,2 @@
-# cv
-CV Django Website
+# cv_app
+CV Website

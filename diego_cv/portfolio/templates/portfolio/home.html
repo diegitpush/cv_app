@@ -1,0 +1,452 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Diego López</title>
+  <link rel="shortcut icon" href="{% static 'document-text.svg' %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/prism.css' %}"
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a class="logo m-0">CV<span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+          <li><a href="#home-section" class="nav-link active">Home</a></li>
+          <li><a href="#about-section" class="nav-link">About Me</a></li>
+          <li><a href="#experience-section" class="nav-link">Experience</a></li>
+          <li><a href="#technologies-section" class="nav-link">Skills</a></li>
+          <li><a href="#projects-section" class="nav-link">Personal Projects</a></li>
+
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="untree_co-section pb-0" id="home-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+            <div class="text-box" style="color: #6E6E73">
+                <h2><code>>></code> <span class="auto-input"></span></h2>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+              let typed = new Typed(".auto-input", {
+                strings: ["Data Engineering", "Software Development", "Machine Learning"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+              })
+            </script>
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>Diego<span class="text-primary">.</span> López</strong></h1>
+          <h2 class="subheading gsap-reveal-hero mb-4">
+            Data Engineer based in <strong>Madrid, Spain</strong>. Curious, self-teaching, proactive. Fluent in Software Development and Machine Learning. You can also check my <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank">LinkedIn Profile</a>.
+          </h2>
+          <p class="gsap-reveal-hero"><a href="{% static 'pdf/diegolopez_cv.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to download my CV as PDF</a></p>    
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+    <div class="untree_co-section pb-0" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-7 mx-auto text-center author-wrap">
+            <img src="{% static 'images/ID_Photo.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Diego López</h3>
+            <p class="gsap-reveal-hero">Data Engineer & Software Developer</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+
+
+            <p class="gsap-reveal-hero">I was born in Madrid and studied on Sagrado Corazón de Madrid. I enroled in the Material Science and Engineering Bachelor in <a href="https://www.upm.es/" target="_blank"><span style="color:#f7f7f7" class="bolded"> Universidad Politécnica de Madrid. </span></a> </p>
+
+            <p class="gsap-reveal-hero">On my fourth year I got an Erasmus scolarship to study in <a href="https://vilniustech.lt" target="_blank"><span style="color:#f7f7f7" class="bolded"> Vilnius Tech.</span></a> I completed my studies in four years.</p>
+
+            <p class="gsap-reveal-hero">During my Final Grade Paper I started to get into programming and Data, analyzing laboratory results using Python. The project, financed by Huawei, <a href="{% static 'pdf/TFG_Diego_Lopez.pdf' %}" target="_blank"><span style="color:#f7f7f7" class="bolded">consisted on improving the electromechanical coupling factor in SAW devices.</span></a></p>
+
+            <p class="gsap-reveal-hero">My first job was already software related, as an Automation Developer in <a href="https://www.prosegur.com/en/" target="_blank"><span style="color:#f7f7f7" class="bolded">Prosegur.</span></a> I jumped to Data Engineering in the consultancy firm <a href="https://www.alten.com/" target="_blank"><span style="color:#f7f7f7" class="bolded">Alten,</span></a> and I am currently working as a Data Engineer/Software Developer in the insurtech firm <a href="https://www.linkedin.com/company/allianzdirect/posts/?feedView=all" target="_blank"><span style="color:#f7f7f7" class="bolded">Allianz Direct.</span></a></p>
+
+            <p class="gsap-reveal-hero mb-5">Focused in the areas of Data, ML/AI and software development, I am also very interested in (cyber)security, DevOps and all things software related!</p>
+
+
+            <p class="gsap-reveal-hero text-center"><a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank" class="btn btn-outline-black">More information on LinkedIn</a></p>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="untree_co-section pb-0" id="experience-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Experience</strong></h2>
+            <p class="gsap-reveal-hero">Job Experiences</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+    <section class="job-experience">
+      <div class="container">
+
+        <!-- ALLIANZ DIRECT -->
+          <div class="row">
+              <div class="col-md-2">
+                  <!-- Company Icon -->
+                  <img src="{% static 'images/azdir_logo.png' %}" alt="Allianz Direct" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                  <!-- Job Position Title -->
+                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="azdir-exp">Data Engineer & Software Developer</h1>
+                  <!-- Company Subtitle -->
+                  <p class="job-dates-company" style="color: #84848a">
+                    <span class="job-dates">Allianz Direct (November 2023 - today)</span>
+                </p>
+                  <!-- Experience Description -->
+                  <p class="experience-description">
+                    Data Engineer and software developer in charge of building, maintaining and scaling a unified Data Platform as a core component of a data-centric company.
+                    This data platform is a self-service data lakehouse, in which different domain users can autonomously generate new data pipelines by filling templates, which are automatically deployed on Databricks, and which custom logic is developed in Scala and Python.
+                    Our goal is a data platform in which employees all across the company can include data as a core component of their workflows and decision processes, making this as agile and easy for them as possible, while still following software and governance best practices. <br><br>
+                  
+                    My responsabilities include:<br>
+                    Develop an ecosystem (custom libraries, CI/CD pipelines, IaC) in which users can automatically ingest data (Kafka, APIs, files) and transform it (Python, dbt) by just filling templates<br>
+                    Build custom pipelines for data analytics and machine learning use cases<br>
+                    Data governance (IAM, GDPR, data quality)<br>
+                    Platform security (access controls, security by depth)<br>
+                    Cost optimization (storage and compute)<br>
+                    Platform monitoring (both internal and user-facing dashboards)<br><br>
+
+                    Tech stack: Data Platform based on Azure Databricks. Code developed in Scala, Python and SQL. GitHub used for version control and CI/CD. Terraform for IaC. For ingestion and transformation: Kafka, Spark, pandas, dbt.
+                    
+                  </p>
+          </div>
+          <!-- ALTEN -->
+          <div class="row">
+            <div class="col-md-2">
+                <!-- Company Icon -->
+                <img src="{% static 'images/alten_logo_2.png' %}" alt="ALTEN" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+                <!-- Job Position Title -->
+                <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="alten-exp">Data Engineer</h1>
+                <!-- Company Subtitle -->
+                <p class="job-dates-company" style="color: #84848a">
+                  <span class="job-dates">Alten (March 2022 - November 2023)</span>
+              </p>
+                <!-- Experience Description -->
+                <p class="experience-description">
+                  Data Engineer in charge of building data pipelines to ingest, transform and load data from different business applications into a unified cloud-based data lakehouse, serving the business needs all across the process.
+                  The data lakehouse was based on Azure Databricks, and the pipelines were bulit using Scala, Python or SQL within the Spark framework.
+                  Other tools used: Azure Synapse, Azure Data Factory, Azure DevOps.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- PROSEGUR -->
+        <div class="row">
+          <div class="col-md-2">
+              <!-- Company Icon -->
+              <img src="{% static 'images/prosegur.jpg' %}" alt="PROSEGUR" class="img-fluid">
+          </div>
+          <div class="col-md-10">
+              <!-- Job Position Title -->
+              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="prosegur-exp">Automation Developer</h1>
+              <!-- Company Subtitle -->
+              <p class="job-dates-company" style="color: #84848a">
+                <span class="job-dates">Prosegur (October 2019 - March 2022)</span>
+            </p>
+              <!-- Experience Description -->
+              <p class="experience-description">
+                Automation of manual business processes for departments within the company, using tools such as Python, SQL, VBA withing Blue Prism RPA workflows.
+              </p>
+          </div>
+      </div>
+
+
+      </div>
+  </section>
+
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="technologies-section"><strong>Skills</strong></h2>
+            <p class="gsap-reveal-hero">Technologies and soft skills</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-code.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Programming languages</h3>
+              <p class="gsap-reveal-hero">Proficient in Scala, Python and SQL. Some limited experience with web development related languages (this website!)</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-framework.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Frameworks</h3>
+              <p class="gsap-reveal-hero">Proficient in Spark, SQL Databases and REST APIs. Experience with pandas and Kafka </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/cloud-done.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Cloud</h3>
+              <p class="gsap-reveal-hero">Proficient with Azure services. Also have some specific knowledge of Google Cloud and AWS</p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-ai.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Machine Learning</h3>
+              <p class="gsap-reveal-hero">Experience with preprocessing, feature engineering and decision tree based models (XGBoost). Theoretical knowledge of state-of-the-art Deep Learning architectures (convolutions, transformers, residual networks). Made an end-to-end ML pipeline as a side project</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-tux.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Linux</h3>
+              <p class="gsap-reveal-hero">Experience handling Linux/UNIX systems (Ubuntu, WSL)</p>
+                <code class="language-shell line-highlight gsap-reveal-hero">
+                  $ echo Nice to meet you $(whoami)! 
+                </code>
+
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-skills.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Soft skills</h3>
+              <p class="gsap-reveal-hero">I work well in teams and I try to be proactive and innovative. I am very curious by nature, both in work and non-work related topics (I am completing a Philosophy Bachelor in my free time). I always get along with my colleagues, I joke a lot and I like fun and friendly environments!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section testimonial-wrap">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="projects-section"><strong>Personal Projects</strong></h2>
+            <p class="gsap-reveal-hero">Projects I have worked on in my free time</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="200">
+
+          <div class="owl-carousel owl-3-slider">
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/bw.png' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Botwenger</h3>
+                  <span class="caption">End-to-end ML workflow</span>
+                </div>
+                <blockquote>
+                  <p> End-to-end machine learning workflow to make daily recommendations for the football fantasy game Biwenger. Including data scraping, preprocessing, feature engineering, model training, daily inference, post-processing and serving. Check the README for more info!</p>
+                </blockquote>
+                <p class="gsap-reveal-hero">
+                  <a href="https://github.com/diegitpush/botwenger" target="_blank" class="btn btn-outline-black">Click to see the GitHub repository</a>
+                </p>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/svg/curriculum-resume.svg' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Curriculum Vitae website</h3>
+                  <span class="caption">You are already here!</span>
+                </div>
+                <blockquote>
+                  <p>Development of this static website containing my CV using Django for development and GitHub Pages for deployment</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/svg/more.svg' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>More to come!</h3>
+                </div>
+              </div>
+            </div>
+            <!-- END .item -->
+            <!-- END .item -->
+          </div>
+        </div>
+      <!-- </div>
+    </div> -->
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Links</strong></h2>
+            <p class="gsap-reveal-hero">Get in touch!</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-linkedin"></span> LinkedIn </a>
+              <a href="https://github.com/diegitpush" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-github"></span> GitHub </a>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+
+
+
+
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">Diego López &copy;<script>document.write(new Date().getFullYear());</script>
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/wave-animate.js' %}"></script>
+    <script src="{% static 'js/circle-progress.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'js/scrollmagic.animation.gsap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/prism.js' %}"></script>
+  </body>
+  </html>
