@@ -44,22 +44,14 @@
   <nav class="site-nav dark mb-5 site-navbar-target">
     <div class="container">
       <div class="site-navigation">
-        <a href="index.html" class="logo m-0">CV<span class="text-primary">.</span></a>
+        <a class="logo m-0">CV<span class="text-primary">.</span></a>
 
         <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
           <li><a href="#home-section" class="nav-link active">Home</a></li>
           <li><a href="#about-section" class="nav-link">About Me</a></li>
-          <li class="has-children">
-            <a href="#experience-section" class="nav-link">Experience</a>
-            <ul class="dropdown">
-              <li><a href="#azdir-exp" class="nav-link">Allianz Direct</a></li>
-              <li><a href="#alten-exp" class="nav-link">Alten</a></li>
-              <li><a href="#prosegur-exp" class="nav-link">Prosegur</a></li>
-            </ul>
-          </li>
-          <li><a href="#technologies-section" class="nav-link">Technologies</a></li>
-          <li><a href="#skills-section" class="nav-link">Skills</a></li>
-          <li><a href="#projects-section" class="nav-link">Projects</a></li>
+          <li><a href="#experience-section" class="nav-link">Experience</a></li>
+          <li><a href="#technologies-section" class="nav-link">Skills</a></li>
+          <li><a href="#projects-section" class="nav-link">Personal Projects</a></li>
 
           <li><a href="#contact-section" class="nav-link">Contact</a></li>
         </ul>
@@ -169,13 +161,13 @@
                   <!-- Experience Description -->
                   <p class="experience-description">
                     Data Engineer and software developer in charge of building, maintaining and scaling a unified Data Platform as a core component of a data-centric company.
-                    This data platform is a self-service Data Lakehouse, in which different domain users can autonomously generate new data pipelines by filling templates, which are automatically deployed on Databricks, and which custom logic is developed in Scala and Python.
-                    Our goal is a Data Platform in which employees all across the company can include Data as a core component of their workflows and decision processes, making this as agile and easy for them as possible, while still following software and governance best practices for future maintability and scalability. <br><br>
+                    This data platform is a self-service data lakehouse, in which different domain users can autonomously generate new data pipelines by filling templates, which are automatically deployed on Databricks, and which custom logic is developed in Scala and Python.
+                    Our goal is a data platform in which employees all across the company can include data as a core component of their workflows and decision processes, making this as agile and easy for them as possible, while still following software and governance best practices for future maintability and scalability. <br><br>
                   
                     My responsabilities include:<br>
                     Develop an ecosystem (custom libraries, CI/CD pipelines, IaC) in which users can automatically ingest data (Kafka, APIs, files) and transform it (Python, dbt) by just filling templates<br>
                     Build custom pipelines for Data Analytics and Machine Learning use cases<br>
-                    Data Governance (IAM, GDPR, data quality)<br>
+                    Data governance (IAM, GDPR, data quality)<br>
                     Platform security (access controls, security by depth)<br>
                     Cost optimization (storage and compute)<br>
                     Platform monitoring (both internal and user-facing dashboards)<br><br>
@@ -235,8 +227,8 @@
       <div class="container">
         <div class="row mb-4">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0" id="technologies-section"><strong>Technologies</strong></h2>
-            <p class="gsap-reveal-hero">These are some of my technical skills</p>
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="technologies-section"><strong>Skills</strong></h2>
+            <p class="gsap-reveal-hero">Technologies and soft skills</p>
             <div class="wave gsap-reveal-hero" >
               <svg>
                 <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
@@ -250,19 +242,19 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'images/svg/logo-python.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-code.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
-              <h3 class="gsap-reveal-hero">Python</h3>
-              <p class="gsap-reveal-hero">Proficiency in Python. Total control on ETLs and Pipelines. Creation of an Open Source Package `pysqltools`</p>
+              <h3 class="gsap-reveal-hero">Programming languages</h3>
+              <p class="gsap-reveal-hero">Proficient in Scala, Python and SQL. Some limited experience with web development related languages (this website!)</p>
             </div>
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'images/svg/server.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-framework.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
-              <h3 class="gsap-reveal-hero">SQL</h3>
-              <p class="gsap-reveal-hero">Proficient working with databases. Creating and handling databases, usage of advanced window functions, etc.</p>
+              <h3 class="gsap-reveal-hero">Frameworks</h3>
+              <p class="gsap-reveal-hero">Proficient in Spark, SQL Databases and REST APIs. Experience with pandas and Kafka </p>
             </div>
           </div>
 
@@ -272,7 +264,7 @@
                 <span class="icon-service"><img src="{% static 'images/svg/cloud-done.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Cloud</h3>
-              <p class="gsap-reveal-hero">Experience working with different cloud providers (AWS, GCloud), even created my own Cloud on a NAS</p>
+              <p class="gsap-reveal-hero">Proficient with Azure services. Also have some specific knowledge of Google Cloud and AWS</p>
             </div>
           </div>
 
@@ -280,10 +272,10 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'images/svg/logo-javascript.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-ai.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
-              <h3 class="gsap-reveal-hero">HTML, CSS, JS</h3>
-              <p class="gsap-reveal-hero">Basic knowledge on these three languages to create a website. This website was created on Django and HTML, CSS and JS (bootstrap)</p>
+              <h3 class="gsap-reveal-hero">Machine Learning</h3>
+              <p class="gsap-reveal-hero">Experience with preprocessing, feature engineering and decision tree based models (XGBoost). Theoretical knowledge of state-of-the-art Deep Learning architectures (convolutions, transformers, residual networks). Made an end-to-end ML pipeline as a side project</p>
             </div>
           </div>
 
@@ -292,8 +284,8 @@
               <div class="gsap-reveal-hero mb-3">
                 <span class="icon-service"><img src="{% static 'images/svg/logo-tux.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
-              <h3 class="gsap-reveal-hero">Bash/Linux</h3>
-              <p class="gsap-reveal-hero">Great Experience handling linux/unix systems. All of my developments use them (I use ubuntu and MacOS). Also used in Cloud as most systems are linux-based.</p>
+              <h3 class="gsap-reveal-hero">Linux</h3>
+              <p class="gsap-reveal-hero">Experience handling Linux/UNIX systems (Ubuntu, WSL)</p>
                 <code class="language-shell line-highlight gsap-reveal-hero">
                   $ echo Nice to meet you $(whoami)! 
                 </code>
@@ -304,62 +296,10 @@
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
             <div class="service text-center">
               <div class="gsap-reveal-hero mb-3">
-                <span class="icon-service"><img src="{% static 'images/svg/logo-docker.svg' %}" alt="Image" class="img-fluid"></span>
+                <span class="icon-service"><img src="{% static 'images/svg/logo-skills.svg' %}" alt="Image" class="img-fluid"></span>
               </div>
-              <h3 class="gsap-reveal-hero">Docker</h3>
-              <p class="gsap-reveal-hero">Use of Docker to containerize applications, both personal apps on my own NAS or ETLs to run in Apache Airflow</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class="untree_co-section pb-0">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0" id="skills-section"><strong>My Skillset</strong></h2>
-            <p class="gsap-reveal-hero">How I manage the main sections of the Data World</p>
-            <div class="wave gsap-reveal-hero" >
-              <svg>
-                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
-            <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="98">
-                <div class="number"></div>
-                <p class="caption">Data Engineering</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="95">
-                <div class="number"></div>
-                <p class="caption">Data Analytics</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="87">
-                <div class="number"></div>
-                <p class="caption">Data Visualisation</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="78">
-                <div class="number"></div>
-                <p class="caption">Data Architecture</p>
-              </div>
+              <h3 class="gsap-reveal-hero">Soft skills</h3>
+              <p class="gsap-reveal-hero">I work well in teams, try to be proactive and innovative. I am very curious by nature, both in work and non-work related topics (I am completing a Philosophy Bachelor in my free time). I joke a lot and try not to take life very seriously!</p>
             </div>
           </div>
 
@@ -372,7 +312,7 @@
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
             <h2 class="section-heading gsap-reveal-hero mb-0" id="projects-section"><strong>Personal Projects</strong></h2>
-            <p class="gsap-reveal-hero">Projects I have developed on my free time</p>
+            <p class="gsap-reveal-hero">Projects I have worked on in my free time</p>
 
             <div class="wave gsap-reveal-hero" >
               <svg>
@@ -382,55 +322,21 @@
           </div>
         </div>
 
-
         <div data-aos="fade-left" data-aos-delay="200">
-
-
 
           <div class="owl-carousel owl-3-slider">
             <div class="item">
               <div class="testimonial-v1">
-                <img src="{% static 'images/pysqltools.png' %}" alt="Image" class="img-fluid">
-                <div class="mb-4">
-                  <h3>pySQLTools</h3>
-                  <span class="caption">Open Soruce Python Package</span>
-                </div>
-                <blockquote>
-                  <p>As a data analyst and engineer, I often need to deal with the integration of SQL and Python. That's why I developed a python Package that eases the interaction between these two Technologies on an easy way</p>
-                </blockquote>
-                <p class="gsap-reveal-hero"><a href="https://github.com/pablominue/pysqltools" target="_blank" class="btn btn-outline-black">Click here to see the details of the Project</a></p>
-              </div>
-            </div>
-            <!-- END .item -->
-
-
-              <div class="item">
-                <div class="testimonial-v1">
-                  <img src="{% static 'images/abtestools.jpg' %}" alt="Image" class="img-fluid">
-                  <div class="mb-4">
-                    <h3>ABtestools</h3>
-                    <span class="caption">Open Soruce Python Package</span>
-                  </div>
-                  <blockquote>
-                    <p>After leading the Marketing Data Team, I decided to put together a series of useful tools for markeeting AB Testing (Audience creation, Test results, Statistical Significance and mode)</p>
-                  </blockquote>
-                  <p class="gsap-reveal-hero"><a href="https://github.com/pablominue/pyabtesting" target="_blank" class="btn btn-outline-black">Click here to see the details of the Project</a></p>
-                </div>
-              </div>
-              <!-- END .item -->
-
-            <div class="item">
-              <div class="testimonial-v1">
                 <img src="{% static 'images/bw.png' %}" alt="Image" class="img-fluid">
                 <div class="mb-4">
-                  <h3>Fantasy Football App</h3>
-                  <span class="caption">Android/iOS App for Biwenger Statitics</span>
+                  <h3>Botwenger</h3>
+                  <span class="caption">End-to-end ML workflow</span>
                 </div>
                 <blockquote>
-                  <p>Biwenger is a Fantasy Football app. The purpose of this project was to provide insights on players performance, profit chances on random packs, etc.</p>
+                  <p> End-to-end machine learning workflow to make daily recommendations for the football fantasy game Biwenger. Including data scraping, preprocessing, feature engineering, model training, daily inference, post-processing and serving. Check the README for more info!</p>
                 </blockquote>
                 <p class="gsap-reveal-hero">
-                  <a href="https://github.com/pablominue/bw_app" target="_blank" class="btn btn-outline-black">Click here to check the GitHub Page</a>
+                  <a href="https://github.com/diegitpush/botwenger" target="_blank" class="btn btn-outline-black">Click to see the GitHub repository</a>
                   <!-- <span class="icon-service"><img src="{% static 'images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
                 </p>
               </div>
@@ -439,18 +345,23 @@
 
             <div class="item">
               <div class="testimonial-v1">
-                <img src="{% static 'images/luckyromero.png' %}" alt="Image" class="img-fluid">
+                <img src="{% static 'images/svg/curriculum-resume.svg' %}" alt="Image" class="img-fluid">
                 <div class="mb-4">
-                  <h3>Rock Band Website</h3>
-                  <span class="caption">Lucky Romero</span>
+                  <h3>Curriculum Vitae website</h3>
+                  <span class="caption">You are already here!</span>
                 </div>
                 <blockquote>
-                  <p>Development of my Rock Band's website</p>
+                  <p>Development of this website containing my CV using Django for development and Docker for deployment</p>
                 </blockquote>
-                <p class="gsap-reveal-hero">
-                  <a href="https://grupoluckyromero.onrender.com/" target="_blank" class="btn btn-outline-black">Click here to check it out</a>
-                  <!-- <span class="icon-service"><img src="{% static 'images/svg/github.svg' %}" alt="Image" class="img-fluid"></span> -->
-                </p>
+              </div>
+            </div>
+            <!-- END .item -->
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/svg/more.svg' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>More to come!</h3>
+                </div>
               </div>
             </div>
             <!-- END .item -->
@@ -464,7 +375,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contact</strong></h2>
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Links</strong></h2>
             <p class="gsap-reveal-hero">Get in touch!</p>
 
             <div class="wave gsap-reveal-hero" >
@@ -474,9 +385,8 @@
 
             </div>
             <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="https://github.com/pablominue" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-github"></span> GitHub </a>
-              <a href="https://www.linkedin.com/in/pablo-minue/" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-linkedin"></span> LinkedIn </a>
-              <a href="mailto:pablominue97@gmail.com" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-envelope"></span> Email </a>
+              <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-573656187/" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-linkedin"></span> LinkedIn </a>
+              <a href="https://github.com/diegitpush" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-github"></span> GitHub </a>
             </div>
           </div>
         </div>
