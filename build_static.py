@@ -14,7 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent
 DJANGO_DIR = REPO_ROOT / 'diego_cv'
 DOCS_DIR = REPO_ROOT / 'docs'
-STATIC_SOURCE = DJANGO_DIR / 'static'
+STATIC_SOURCE = DJANGO_DIR / 'staticfiles'  # Use staticfiles (with hashes), not static
 
 # Add Django project to path and setup
 sys.path.insert(0, str(DJANGO_DIR))
@@ -23,6 +23,11 @@ django.setup()
 
 from django.template.loader import render_to_string
 from django.conf import settings
+from django.core.management import call_command
+
+# Collect static files with hashes
+print("Collecting static files...")
+call_command('collectstatic', '--noinput', '--clear')
 
 # Clean and create docs directory
 if DOCS_DIR.exists():
